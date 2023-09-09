@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",  # policy language version, always include "2012-10-17"
+  "Id": "S3 Account Permissions" # an identifier for the policy (optional)
+  "Statement": [ # one or more individual statements (required)
+    {
+      "Sid": "FirstStatement", # an identifier for the statement (optional)
+      "Effect": "Allow", # whether the statement allows or denies access (Allow, Deny)
+      "Action": ["iam:ChangePassword"],  # list of actions this policy allows or denies
+      "Resource": "*" # list of resources to which the actions applied to
+    },
+    {
+      "Sid": "SecondStatement",
+      "Effect": "Allow",
+      "Action": "s3:ListAllMyBuckets",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ThirdStatement",
+      "Effect": "Allow",
+      "Action": [
+        "s3:List*",
+        "s3:Get*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::confidential-data",
+        "arn:aws:s3:::confidential-data/*"
+      ],
+      "Condition": {"Bool": {"aws:MultiFactorAuthPresent": "true"}} # conditions for when this policy is in effect (optional)
+    }
+  ]
+}
+ 
