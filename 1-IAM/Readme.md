@@ -53,12 +53,17 @@ User -> N groups. Users can belong to more than one groups
 
 **How can users access AWS**
 To access AWS, you have three options:
+
  • AWS Management Console (protected by password + MFA)
+
  • AWS Command Line Interface (CLI): protected by access keys
+
  • AWS Software Developer Kit (SDK) - for code: protected by access keys
 
 Access Keys are secret, just like a password. Don’t share them
+
 Access Key ID == username
+
 Secret Access Key == password
 
 
@@ -66,6 +71,7 @@ Secret Access Key == password
 
 
 **IAM Roles for Services**
+
 we will assign permissions to AWS services with IAM Roles
 
 
