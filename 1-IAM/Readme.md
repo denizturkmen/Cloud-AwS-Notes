@@ -76,6 +76,7 @@ we will assign permissions to AWS services with IAM Roles
 
 
 **IAM Guidelines & Best Practices;**
+
 • Don’t use the root account except for AWS account setup
 
 • One physical user = One AWS user
