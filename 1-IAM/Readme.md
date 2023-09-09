@@ -1,10 +1,15 @@
 # IAM: Identity Access Management
 
 IAM stands for Identity Access Management
+
 Global service
+
 **Root account** created by default. it shouldn't **shared and usaged**.
+
 **Users = people**
+
 Groups: Only contain user
+
 User -> N groups. Users can belong to more than one groups
 
 **Permissions:** Users or Groups can be assigned JSON documents called policies.
