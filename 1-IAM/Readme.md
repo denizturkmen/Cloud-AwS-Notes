@@ -8,6 +8,7 @@ Groups: Only contain user
 User -> N groups. Users can belong to more than one groups
 
 **Permissions:** Users or Groups can be assigned JSON documents called policies.
+``` bash
 {
   "Version": "2012-10-17",  # policy language version, always include "2012-10-17"
   "Id": "S3 Account Permissions" # an identifier for the policy (optional)
@@ -39,7 +40,7 @@ User -> N groups. Users can belong to more than one groups
     }
   ]
 }
-
+```
 
 **IAM – Password Policy** Strong passwords = higher security for your account
 
